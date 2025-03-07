@@ -1,0 +1,38 @@
+package MisProgramas;
+
+public class ParejaNumeros {
+	//Atributos (Variables)
+	int x;
+	int y;
+	double z; //Float más preciso
+	//Constructor (Función que recibe o inicia valores)
+	public ParejaNumeros(int NewX, int NewY){
+		x=NewX; //this.x=x El primero es el que le doy y el otro el de fuera
+		y=NewY;
+	}
+	//Métodos (Lo que puedo hacer con lis datos)
+	//Métodos getters and setters devuelve=get te doy=set
+	int devuelveX(){
+		return(x);
+	}
+	int devuelveY(){
+		return(y);
+	}
+	void setX(int NewX){
+		x=NewX;
+	}
+	void setY(int NewY){
+		y=NewY;
+	}
+	double devuelveModulo(){
+		double modulo=0;
+		modulo=Math.sqrt(modulo);
+		return(modulo);
+	}
+	double devuelveAngulo(){
+		double angulo=0;
+		angulo=Math.atan(angulo);
+		return(angulo);
+	}
+	
+}
