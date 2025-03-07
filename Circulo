@@ -1,0 +1,30 @@
+package MisProgramas;
+
+public class Circulo {
+	double XCentro;
+	double YCentro;
+	double Radio;
+	public Circulo(double NewXCentro, double NewYCentro, double NewRadio){
+		XCentro=NewXCentro;
+		YCentro=NewYCentro;
+		Radio=NewRadio;
+	}
+	double devuelveXCentro(){
+		return(XCentro);
+	}
+	double devuelveYCentro(){
+		return(YCentro);
+	}
+	double devuelveRadio(){
+		return(Radio);
+	}
+	void setXCentro(double NewXCentro){
+		XCentro=NewXCentro;
+	}
+	void setYCentro(double NewYCentro){
+		YCentro=NewYCentro;
+	}
+	void setRadio(double NewRadio){
+		Radio=NewRadio;
+	}
+}
