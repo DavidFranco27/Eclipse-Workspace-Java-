@@ -1,12 +1,17 @@
 package MisProgramas;
-
+//Comentarios automatizados en ellos como un boton a tocar (Estilo libro instrucciones para otra persona)
 public class Circulo {
 	//ARTRIBUTOS
 	double xCentro; //Coordenadas del centro
 	double yCentro;
 	double radio;
 	//CONSTRUCTOR
-	//Automatización: Source-->Generate Constructor using Fields
+	//Automatización: Source-->Generate Constructor using Fields...
+	/**
+	 * @param xCentro
+	 * @param yCentro
+	 * @param radio
+	 */
 	public Circulo(double xCentro, double yCentro, double radio) {
 		this.xCentro = xCentro;
 		this.yCentro = yCentro;
@@ -16,23 +21,49 @@ public class Circulo {
 	//Automatización: Source-->Generate Getter and Setter...
 	//get (Sacar el atributo)
 	//set (Cambiar datos)
+	/**
+	 * @return the xCentro
+	 */
 	public double getxCentro() {
 		return xCentro;
 	}
+	/**
+	 * @param xCentro the xCentro to set
+	 */
 	public void setxCentro(double xCentro) {
 		this.xCentro = xCentro;
 	}
+	/**
+	 * @return the yCentro
+	 */
 	public double getyCentro() {
 		return yCentro;
 	}
+	/**
+	 * @param yCentro the yCentro to set
+	 */
 	public void setyCentro(double yCentro) {
 		this.yCentro = yCentro;
 	}
+	/**
+	 * @return the radio
+	 */
 	public double getRadio() {
 		return radio;
 	}
+	/**
+	 * @param radio the radio to set
+	 */
 	public void setRadio(double radio) {
 		this.radio = radio;
+	}
+	public double getSurface(){
+		double surface=Math.PI*radio*radio;
+		return (surface);
+	}
+	public double getCircleLength() {
+		double CircleLength=2*Math.PI*radio;
+		return (CircleLength);
 	}
 	
 }
