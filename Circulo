@@ -1,30 +1,38 @@
 package MisProgramas;
 
 public class Circulo {
-	double XCentro;
-	double YCentro;
-	double Radio;
-	public Circulo(double NewXCentro, double NewYCentro, double NewRadio){
-		XCentro=NewXCentro;
-		YCentro=NewYCentro;
-		Radio=NewRadio;
+	//ARTRIBUTOS
+	double xCentro; //Coordenadas del centro
+	double yCentro;
+	double radio;
+	//CONSTRUCTOR
+	//Automatización: Source-->Generate Constructor using Fields
+	public Circulo(double xCentro, double yCentro, double radio) {
+		this.xCentro = xCentro;
+		this.yCentro = yCentro;
+		this.radio = radio;
 	}
-	double devuelveXCentro(){
-		return(XCentro);
+	//MÉTODOS
+	//Automatización: Source-->Generate Getter and Setter...
+	//get (Sacar el atributo)
+	//set (Cambiar datos)
+	public double getxCentro() {
+		return xCentro;
 	}
-	double devuelveYCentro(){
-		return(YCentro);
+	public void setxCentro(double xCentro) {
+		this.xCentro = xCentro;
 	}
-	double devuelveRadio(){
-		return(Radio);
+	public double getyCentro() {
+		return yCentro;
 	}
-	void setXCentro(double NewXCentro){
-		XCentro=NewXCentro;
+	public void setyCentro(double yCentro) {
+		this.yCentro = yCentro;
 	}
-	void setYCentro(double NewYCentro){
-		YCentro=NewYCentro;
+	public double getRadio() {
+		return radio;
 	}
-	void setRadio(double NewRadio){
-		Radio=NewRadio;
+	public void setRadio(double radio) {
+		this.radio = radio;
 	}
+	
 }
