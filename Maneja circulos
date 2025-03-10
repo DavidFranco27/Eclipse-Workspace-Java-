@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package MisProgramas;
+
+/**
+ * 
+ */
+public class ManejaCirculos {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Circulo miCirculito;
+		miCirculito=new Circulo(3,2,5);
+		System.out.println("Area= "+ miCirculito.getSurface());
+		System.out.println("Longitud= "+miCirculito.getCircleLength());
+	}
+
+}
