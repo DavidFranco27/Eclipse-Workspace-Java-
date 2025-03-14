@@ -1,0 +1,71 @@
+package MisProgramas;
+
+public class Triangulo {
+	//Atributos
+	double v1X;
+	double v1Y;
+	double v2X;
+	double v2Y;
+	double v3X;
+	double v3Y;
+	//Constructor
+	/**
+	 * @param v1x
+	 * @param v1y
+	 * @param v2x
+	 * @param v2y
+	 * @param v3x
+	 * @param v3y
+	 */
+	public Triangulo(double v1x, double v1y, double v2x, double v2y, double v3x, double v3y) {
+		v1X = v1x;
+		v1Y = v1y;
+		v2X = v2x;
+		v2Y = v2y;
+		v3X = v3x;
+		v3Y = v3y;
+	}
+	//Metodos
+	public double getV1X() {
+		return v1X;
+	}
+	public void setV1X(double v1x) {
+		v1X = v1x;
+	}
+	public double getV1Y() {
+		return v1Y;
+	}
+	public void setV1Y(double v1y) {
+		v1Y = v1y;
+	}
+	public double getV2X() {
+		return v2X;
+	}
+	public void setV2X(double v2x) {
+		v2X = v2x;
+	}
+	public double getV2Y() {
+		return v2Y;
+	}
+	public void setV2Y(double v2y) {
+		v2Y = v2y;
+	}
+	public double getV3X() {
+		return v3X;
+	}
+	public void setV3X(double v3x) {
+		v3X = v3x;
+	}
+	public double getV3Y() {
+		return v3Y;
+	}
+	public void setV3Y(double v3y) {
+		v3Y = v3y;
+	}
+	public double getPerimeterX() {
+		double perimeter=v1X*v2X*v3X+v1Y*v2Y*v3Y;
+		return perimeter;
+	}
+	
+
+}
