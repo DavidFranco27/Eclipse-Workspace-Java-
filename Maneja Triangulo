@@ -1,0 +1,12 @@
+package MisProgramas;
+
+public class ManejaTriangulo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Triangulo miTriangulo;
+		miTriangulo= new Triangulo(4,1,5,5,3,6);
+		System.out.println("Perimetro: "+miTriangulo.getPerimeterX());
+	}
+
+}
