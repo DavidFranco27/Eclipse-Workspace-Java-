@@ -1,0 +1,21 @@
+package MisProgramas;
+//Herencia clase Colegio de sus valores
+public class ColegioDeportista extends Colegio{
+	private String deporte;
+	public ColegioDeportista(String nombre, String apellido1, String apellido2,String deporte) {
+		super(nombre, apellido1, apellido2);
+		this.deporte=deporte;
+	}
+	/**
+	 * @return the deporte
+	 */
+	public String getDeporte() {
+		return deporte;
+	}
+	/**
+	 * @param deporte the deporte to set
+	 */
+	public void setDeporte(String deporte) {
+		this.deporte = deporte;
+	}
+}
