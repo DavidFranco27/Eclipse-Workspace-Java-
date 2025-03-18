@@ -1,0 +1,84 @@
+package MisProgramas;
+
+public class Articulo {
+	private int articuloID;
+	private String nombre;
+	private String formato;
+	private String vendedor;
+	private double precio;
+	/**
+	 * @param articuloID
+	 * @param nombre
+	 * @param formato
+	 * @param vendedor
+	 * @param precio
+	 */
+	public Articulo(int articuloID, String nombre, String formato, String vendedor, double precio) {
+		this.articuloID = articuloID;
+		this.nombre = nombre;
+		this.formato = formato;
+		this.vendedor = vendedor;
+		this.precio = precio;
+	}
+	/**
+	 * @return the articuloID
+	 */
+	public int getArticuloID() {
+		return articuloID;
+	}
+	/**
+	 * @param articuloID the articuloID to set
+	 */
+	public void setArticuloID(int articuloID) {
+		this.articuloID = articuloID;
+	}
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+	/**
+	 * @param nombre the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	/**
+	 * @return the formato
+	 */
+	public String getFormato() {
+		return formato;
+	}
+	/**
+	 * @param formato the formato to set
+	 */
+	public void setFormato(String formato) {
+		this.formato = formato;
+	}
+	/**
+	 * @return the vendedor
+	 */
+	public String getVendedor() {
+		return vendedor;
+	}
+	/**
+	 * @param vendedor the vendedor to set
+	 */
+	public void setVendedor(String vendedor) {
+		this.vendedor = vendedor;
+	}
+	/**
+	 * @return the precio
+	 */
+	public double getPrecio() {
+		return precio;
+	}
+	/**
+	 * @param precio the precio to set
+	 */
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+
+}
