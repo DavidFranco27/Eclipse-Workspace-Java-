@@ -1,0 +1,21 @@
+package MisProgramas;
+
+public class ManejaColegio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Encapsulación Private
+		Colegio Colegio1;
+		ColegioDeportista Colegio2;
+		Colegio1=new Colegio("David","Franco","Martinez");
+		Colegio2=new ColegioDeportista("Carlos","Alcar","Benito","Tenis");
+		System.out.println("Nombre del alumno: "+Colegio1.getNombre());
+		System.out.println("Apellido 1º del alumno: "+Colegio1.getApellido1());
+		System.out.println("Apellido 2º del alumno: "+Colegio1.getApellido2());
+		System.out.println("Nombre del alumno: "+Colegio2.getNombre());
+		System.out.println("Apellido 1º del alumno: "+Colegio2.getApellido1());
+		System.out.println("Apellido 2º del alumno: "+Colegio2.getApellido2());
+		System.out.println("Su deporte es: "+Colegio2.getDeporte());
+	}
+
+}
