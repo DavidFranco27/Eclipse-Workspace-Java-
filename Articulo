@@ -80,5 +80,8 @@ public class Articulo {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-
+	public double getPrecioIVA(){
+		double precioIVA=precio+0.21*precio;
+		return(precioIVA);
+	}
 }
