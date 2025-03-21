@@ -12,6 +12,7 @@ public class ArticuloComestible extends Articulo{
 	 * @param fechaCaducidad
 	 * @param tipo
 	 */
+	//Inicializar
 	public ArticuloComestible(int articuloID, String nombre, String formato, String vendedor, double precio,
 			String fechaCaducidad, String tipo) {
 		super(articuloID, nombre, formato, vendedor, precio);
@@ -42,5 +43,4 @@ public class ArticuloComestible extends Articulo{
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	
 }
