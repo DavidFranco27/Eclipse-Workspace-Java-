@@ -1,0 +1,15 @@
+package MisProgramas;
+
+public class ManejaArticulo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Articulo Articulo1;
+		ArticuloComestible Articulo2;
+		Articulo1= new Articulo(13924,"Zapatillas Nike","Ropa","Juan Carlos",19.3);
+		Articulo2= new ArticuloComestible(31287,"Pechugas","Comida","Manolo",30,21,12,2025,"Carne");
+		System.out.println(Articulo1.getArticuloID()+" "+Articulo1.getNombre()+" "+Articulo1.getFormato()+" "+Articulo1.getVendedor()+" "+Articulo1.getPrecio());
+		System.out.println(Articulo2.getArticuloID()+" "+Articulo2.getNombre()+" "+Articulo2.getFormato()+" "+Articulo2.getVendedor()+""+Articulo2.getFechaCaducidad(1)+""+Articulo2.getTipo());
+	}
+
+}
