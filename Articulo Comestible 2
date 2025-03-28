@@ -1,0 +1,48 @@
+package MisProgramas;
+
+public class ArticuloComestible extends Articulo {
+	private Fecha fechaCaducidad;
+	private String tipo;
+	/**
+	 * @param articuloID
+	 * @param nombre
+	 * @param formato
+	 * @param vendedor
+	 * @param precio
+	 * @param fechaCaducidad
+	 * @param tipo
+	 */
+	//Inicializar
+	public ArticuloComestible(int articuloID, String nombre, String formato, String vendedor, double precio,int dia, int mes, int anio,Fecha fechaCaducidad, String tipo) {
+		super(articuloID, nombre, formato, vendedor, precio);
+		this.fechaCaducidad=fechaCaducidad;
+		this.tipo=tipo;
+		fechaCaducidad=new Fecha(dia,mes,anio);
+	}
+	/**
+	 * @return the fechaCaducidad
+	 */
+	public String getFechaCaducidad(int fechaFormateada) {
+		return fechaCaducidad.getFechaFormato(fechaFormateada);
+	}
+	/**
+	 * @param fechaCaducidad the fechaCaducidad to set
+	 */
+	public void setFechaCaducidad(int dia,int mes, int anio) {
+		fechaCaducidad.setDia(dia);
+		fechaCaducidad.setMes(mes);
+		fechaCaducidad.setAnio(anio);
+	}
+	/**
+	 * @return the tipo
+	 */
+	public String getTipo() {
+		return tipo;
+	}
+	/**
+	 * @param tipo the tipo to set
+	 */
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+}
