@@ -1,0 +1,25 @@
+package MisProgramas;
+
+public class ManejaCilindro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+			Cilindro Cilindro1;
+			CilindroConColor Cilindro2;
+			Cilindro1= new Cilindro(10,20,5);
+			Cilindro2= new CilindroConColor(20,40,10,"Azul");
+			System.out.println("La base del cilindro: "+Cilindro1.getBase());
+			System.out.println("La altura del cilindro: "+Cilindro1.getAltura());				
+			System.out.println("El radio del cilindro: "+Cilindro1.getRadio());
+			System.out.println("El area del cilindro: "+Cilindro1.getAreaCilindro());
+			System.out.println("El perimetro del cilindro: "+Cilindro1.getPerimetroCilindro());
+			System.out.println("La base del cilindro: "+Cilindro2.getBase());
+			System.out.println("La altura del cilindro: "+Cilindro2.getAltura());				
+			System.out.println("El radio del cilindro: "+Cilindro2.getRadio());
+			System.out.println("El area del cilindro: "+Cilindro2.getAreaCilindro());
+			System.out.println("El perimetro del cilindro: "+Cilindro2.getPerimetroCilindro());
+			System.out.println("El color del cilindro: "+Cilindro2.getColor());
+	}
+
+}
