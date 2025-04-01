@@ -1,0 +1,99 @@
+package MisProgramas;
+
+public class CoordenadasCilindro {
+	private int ejex;
+	private int ejey;
+	private int ejez;
+	private int numero;
+	/**
+	 * @param ejex
+	 * @param ejey
+	 * @param ejez
+	 */
+	public CoordenadasCilindro(int ejex, int ejey, int ejez, int numero) {
+		this.ejex = ejex;
+		this.ejey = ejey;
+		this.ejez = ejez;
+		this.numero=numero;
+	}
+	/**
+	 * @return the ejex
+	 */
+	public int getEjex() {
+		return ejex;
+	}
+	/**
+	 * @param ejex the ejex to set
+	 */
+	public void setEjex(int ejex) {
+		this.ejex = ejex;
+	}
+	/**
+	 * @return the ejey
+	 */
+	public int getEjey() {
+		return ejey;
+	}
+	/**
+	 * @param ejey the ejey to set
+	 */
+	public void setEjey(int ejey) {
+		this.ejey = ejey;
+	}
+	/**
+	 * @return the ejez
+	 */
+	public int getEjez() {
+		return ejez;
+	}
+	/**
+	 * @param ejez the ejez to set
+	 */
+	public void setEjez(int ejez) {
+		this.ejez = ejez;
+	}
+	/**
+	 * @return the numero
+	 */
+	public int getNumero() {
+		return numero;
+	}
+	/**
+	 * @param numero the numero to set
+	 */
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public String getCoordenadas() {
+		String coordenadas="("+ejex+","+ejey+","+ejez+")";
+		return(coordenadas);
+	}
+	public String getSuma() {
+		double ejexSumado=ejex+numero;
+		double ejeySumado=ejey+numero;
+		double ejezSumado=ejez+numero;
+		String Suma="("+ejexSumado+","+ejeySumado+","+ejezSumado+")";
+		return(Suma);
+	}
+	public String getResta() {
+		double ejexRestado=ejex-numero;
+		double ejeyRestado=ejey-numero;
+		double ejezRestado=ejez-numero;
+		String Resta="("+ejexRestado+","+ejeyRestado+","+ejezRestado+")";
+		return(Resta);
+	}
+	public String getMultiplicar() {
+		double ejexMultiplicar=ejex*numero;
+		double ejeyMultiplicar=ejey*numero;
+		double ejezMultiplicar=ejez*numero;
+		String Multiplicar="("+ejexMultiplicar+","+ejeyMultiplicar+","+ejezMultiplicar+")";
+		return(Multiplicar);
+	}
+	public String getDivision() {
+		double ejexDividido=ejex/numero;
+		double ejeyDividido=ejey/numero;
+		double ejezDividido=ejez/numero;
+		String Division="("+ejexDividido+","+ejeyDividido+","+ejezDividido+")";
+		return(Division);
+	}
+}
