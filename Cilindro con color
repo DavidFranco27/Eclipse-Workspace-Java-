@@ -2,25 +2,21 @@ package MisProgramas;
 
 public class CilindroConColor extends Cilindro{
 	private String color;
-
 	/**
-	 * @param base
 	 * @param altura
 	 * @param radio
 	 * @param color
 	 */
-	public CilindroConColor(double base, double altura, double radio, String color) {
-		super(base, altura, radio);
+	public CilindroConColor(double altura, double radio, String color) {
+		super(altura, radio);
 		this.color = color;
 	}
-
 	/**
 	 * @return the color
 	 */
 	public String getColor() {
 		return color;
 	}
-
 	/**
 	 * @param color the color to set
 	 */
