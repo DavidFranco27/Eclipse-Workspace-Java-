@@ -1,42 +1,27 @@
 package MisProgramas;
 
-public class CilindroSobrecargado {
-	private double base;
+public class Cilindro {
 	private double altura;
 	private double radio;
+	private CoordenadasCilindro coordenadas;
 	/**
-	 * @param base
-	 * @param altura
-	 * @param radio
-	 * @return 
-	 */
-	public CilindroSobrecargado(double base) {
-		this.base = base;
-	}
-	
-	/**
-	 * @param base
 	 * @param altura
 	 * @param radio
 	 */
-	//Sobrecargado
-	public CilindroSobrecargado(double base, double altura, double radio) {
-		this.base = base;
+	public Cilindro(double altura, double radio) {
 		this.altura = altura;
 		this.radio = radio;
 	}
-
+	//Sobrecarga
 	/**
-	 * @return the base
+	 * @param altura
+	 * @param radio
+	 * @param coordenadas
 	 */
-	public double getBase() {
-		return base;
-	}
-	/**
-	 * @param base the base to set
-	 */
-	public void setBase(double base) {
-		this.base = base;
+	public Cilindro(double altura, double radio, CoordenadasCilindro coordenadas) {
+		this.altura = altura;
+		this.radio = radio;
+		this.coordenadas = coordenadas;
 	}
 	/**
 	 * @return the altura
@@ -62,8 +47,13 @@ public class CilindroSobrecargado {
 	public void setRadio(double radio) {
 		this.radio = radio;
 	}
+	public double getVolumenCilindro() {
+		double areaBase=Math.PI*radio*radio;
+		double volumen=areaBase*altura;
+		return(volumen);
+	}
 	public double getAreaCilindro() {
-		double area=2*base*altura+2*radio*radio*Math.PI;
+		double area=altura*radio*2*Math.PI+Math.PI*radio*radio;
 		return(area);
 	}
 	public double getPerimetroCilindro() {
