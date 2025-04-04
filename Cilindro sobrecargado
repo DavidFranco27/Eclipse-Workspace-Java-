@@ -12,7 +12,7 @@ public class Cilindro {
 		this.altura = altura;
 		this.radio = radio;
 	}
-	//Sobrecarga
+	//Sobrecargado
 	/**
 	 * @param altura
 	 * @param radio
@@ -52,12 +52,15 @@ public class Cilindro {
 		double volumen=areaBase*altura;
 		return(volumen);
 	}
-	public double getAreaCilindro() {
-		double area=altura*radio*2*Math.PI+Math.PI*radio*radio;
-		return(area);
+	public double getSuperficie() {
+		double areaLateral=2*Math.PI*radio*altura;
+		double areaBase=Math.PI*radio*radio;
+		double superficie=areaLateral+areaBase*2;
+		return(superficie);
 	}
-	public double getPerimetroCilindro() {
-		double perimetro=2*radio*radio*Math.PI;
-		return(perimetro);
+	//Sobrecargado El boolean(true/false) los diferencia
+	public double getSuperficie(boolean tipo) {
+		double areaLateral=2*Math.PI*radio*altura;
+		return(areaLateral);
 	}
 }
