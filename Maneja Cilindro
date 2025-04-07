@@ -8,26 +8,23 @@ public class ManejaCilindro {
 			Cilindro Cilindro1;
 			CilindroConColor Cilindro2;
 			CoordenadasCilindro CilindroS;
-			Cilindro1= new Cilindro(10,20,5);
-			Cilindro2= new CilindroConColor(20,40,10,"Azul");
+			Cilindro1= new Cilindro(20,5);
+			Cilindro2= new CilindroConColor(40,10,"Azul");
 			CilindroS= new CoordenadasCilindro(2,8,10,2);
-			System.out.println("La base del cilindro: "+Cilindro1.getBase());
 			System.out.println("La altura del cilindro: "+Cilindro1.getAltura());				
 			System.out.println("El radio del cilindro: "+Cilindro1.getRadio());
-			System.out.println("El area del cilindro: "+Cilindro1.getAreaCilindro());
-			System.out.println("El perimetro del cilindro: "+Cilindro1.getPerimetroCilindro());
-			System.out.println("La base del cilindro: "+Cilindro2.getBase());
+			System.out.println("El volumen del cilindro: "+Cilindro1.getVolumenCilindro());
+			System.out.println("La superficie del cilindro: "+Cilindro1.getSuperficie());
 			System.out.println("La altura del cilindro: "+Cilindro2.getAltura());
 			System.out.println("El radio del cilindro: "+Cilindro2.getRadio());
-			System.out.println("El area del cilindro: "+Cilindro2.getAreaCilindro());
-			System.out.println("El perimetro del cilindro: "+Cilindro2.getPerimetroCilindro());
+			System.out.println("La superficie del cilindro: "+Cilindro2.getSuperficie());
 			System.out.println("El color del cilindro: "+Cilindro2.getColor());
 			System.out.println("Las coordenadas del cilindro son: "+CilindroS.getCoordenadas());
 			System.out.println("Para las siguientes operaciones usare: "+CilindroS.getNumero());
-			System.out.println("La suma da "+CilindroS.getSuma());
-			System.out.println("La resta da "+CilindroS.getResta());
-			System.out.println("La multiplicacion da "+CilindroS.getMultiplicar());
-			System.out.println("La division da "+CilindroS.getDivision());
+			System.out.println("La suma da: "+CilindroS.getSuma());
+			System.out.println("La resta da: "+CilindroS.getResta());
+			System.out.println("La multiplicacion da: "+CilindroS.getMultiplicar());
+			System.out.println("La division da: "+CilindroS.getDivision());
 	}
 
 }
