@@ -1,0 +1,111 @@
+package MisProgramas;
+
+public class Alarma {
+	private int hora;
+	private int minutos;
+	private String diaSemana;
+	private String mensajePersonalizado;
+	private double retraso;
+
+	/**
+	 * @param hora
+	 * @param minutos
+	 * @param diaSemana
+	 * @param mensajePersonalizado
+	 * @param retraso
+	 */
+	public Alarma(int hora, int minutos, String diaSemana, String mensajePersonalizado, double retraso) {
+		this.hora = hora;
+		this.minutos = minutos;
+		this.diaSemana = diaSemana;
+		this.mensajePersonalizado = mensajePersonalizado;
+		this.retraso = retraso;
+	}
+	
+	/**
+	 * @return the hora
+	 */
+	public int getHora() {
+		return hora;
+	}
+
+	/**
+	 * @param hora the hora to set
+	 */
+	public void setHora(int hora) {
+		this.hora = hora;
+	}
+
+	/**
+	 * @return the minutos
+	 */
+	public int getMinutos() {
+		return minutos;
+	}
+
+	/**
+	 * @param minutos the minutos to set
+	 */
+	public void setMinutos(int minutos) {
+		this.minutos = minutos;
+	}
+
+	/**
+	 * @return the diaSemana
+	 */
+	public String getDiaSemana() {
+		return diaSemana;
+	}
+
+	/**
+	 * @param diaSemana the diaSemana to set
+	 */
+	public void setDiaSemana(String diaSemana) {
+		this.diaSemana = diaSemana;
+	}
+
+	/**
+	 * @return the mensajePersonalizado
+	 */
+	public String getMensajePersonalizado() {
+		return mensajePersonalizado;
+	}
+
+	/**
+	 * @param mensajePersonalizado the mensajePersonalizado to set
+	 */
+	public void setMensajePersonalizado(String mensajePersonalizado) {
+		this.mensajePersonalizado = mensajePersonalizado;
+	}
+
+	/**
+	 * @return the retraso
+	 */
+	public double getRetraso() {
+		return retraso;
+	}
+
+	/**
+	 * @param retraso the retraso to set
+	 */
+	public void setRetraso(double retraso) {
+		this.retraso = retraso;
+	}
+
+	public String desactivacion() {
+		String activacion="activar";
+		return(activacion);
+	}
+	
+	public String desactivacion(boolean tipo) {
+		String activacion="desactivar";
+		return(activacion);
+	}
+	
+	public double retrasoMinutos() {
+		double minutosExtra=hora*60;
+		double minutosRetrasados=minutosExtra+minutos-retraso;
+		return(minutosRetrasados);
+	}
+
+}
