@@ -1,0 +1,53 @@
+package MisProgramas;
+
+public class AlarmaRecurrente extends Alarma{
+	private int dias;
+	private int periodicidad;
+	/**
+	 * @param hora
+	 * @param minutos
+	 * @param diaSemana
+	 * @param mensajePersonalizado
+	 * @param retraso
+	 * @param dias
+	 * @param periodicidad
+	 */
+	public AlarmaRecurrente(int hora, int minutos, String diaSemana, String mensajePersonalizado, double retraso,
+			int dias, int periodicidad) {
+		super(hora, minutos, diaSemana, mensajePersonalizado, retraso);
+		this.dias = dias;
+		this.periodicidad = periodicidad;
+	}
+	/**
+	 * @return the dias
+	 */
+	public int getDias() {
+		return dias;
+	}
+	/**
+	 * @param dias the dias to set
+	 */
+	public void setDias(int dias) {
+		this.dias = dias;
+	}
+	/**
+	 * @return the periodicidad
+	 */
+	public int getPeriodicidad() {
+		return periodicidad;
+	}
+	/**
+	 * @param periodicidad the periodicidad to set
+	 */
+	public void setPeriodicidad(int periodicidad) {
+		this.periodicidad = periodicidad;
+	}
+	public String periodicidadAlarma() {
+		int p1=dias+periodicidad;
+		int p2=dias+p1;
+		int p3=dias+p2;
+		int p4=dias+p3;
+		String pAlarma=dias+" "+p1+" "+p2+" "+p3+" "+p4;
+		return(pAlarma);
+	}
+}
