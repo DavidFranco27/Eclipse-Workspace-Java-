@@ -1,0 +1,24 @@
+package MisProgramas;
+
+public class ManejaAlarma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Alarma Alarma1;
+		AlarmaRecurrente Alarma2;
+		Alarma1= new Alarma(2,30,"Lunes","Hola",200);
+		Alarma2= new AlarmaRecurrente(3,21,"Miercoles","Odio programarme a mi mismo",300,3,7);
+		System.out.println("La alarma se activa dentro de "+Alarma1.getHora()+" horas "+Alarma1.getMinutos()+" minutos el día "+Alarma1.getDiaSemana());
+		System.out.println("Mensaje que elegistes que dijiera: "+Alarma1.getMensajePersonalizado());
+		System.out.println("He de "+Alarma1.desactivacion(true)+" la alarma");
+		System.out.println("Tras el retraso de hora que me has pedido, al final se queda en: "+Alarma1.getRetraso()+" minutos se activa");
+		System.out.println("La alarma se activa dentro de "+Alarma2.getHora()+" horas "+Alarma2.getMinutos()+" minutos el día "+Alarma2.getDiaSemana());
+		System.out.println("Mensaje que elegistes que dijiera: "+Alarma2.getMensajePersonalizado());
+		System.out.println("He de "+Alarma2.desactivacion()+" la alarma");
+		System.out.println("Tras el retraso de hora que me has pedido, al final se queda en: "+Alarma2.getRetraso()+" minutos se activa");
+		System.out.println("El día del mes es "+Alarma2.getDias());
+		System.out.println("La alarma se repetira con una periodicidad de "+Alarma2.getPeriodicidad()+" dias");
+		System.out.println("La alarma se repetira en los días "+Alarma2.periodicidadAlarma()+" en la hora anteriormente dicha");
+	}
+
+}
